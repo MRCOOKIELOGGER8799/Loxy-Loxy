@@ -7,8 +7,9 @@
 
 from requests import get;import discord;from discord.ext import commands
 def bot():
-    client = commands.Bot(command_prefix="PREFIX HERE")
-    discordBot = 'TOKEN HERE'
+    client = commands.Bot(command_prefix="!"
+    discordBot = 'MTA0ODE2MzMyNjI4ODQ3ODIxOA.G3ITuG.C4GRASkrRadcVAKrwHmc-NindjVMAaUIQv-WwU
+      '
     @client.event
     async def on_ready():
         print(f"""Successfully Connected To [{client.user}]\n\n[!] Logs will be sent here""")
